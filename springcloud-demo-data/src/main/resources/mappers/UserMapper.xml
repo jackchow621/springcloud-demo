@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.ghost.springcloud.mapper.UserMapper">
+
+    <resultMap id="BaseResultMapper" type="com.ghost.springcloud.entity.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="height" property="height"/>
+        <result column="weight" property="weight"/>
+        <result column="phone" property="phone"/>
+    </resultMap>
+
+    <insert id="addUser">
+        insert into user_info(phone,age) values (#{phone},#{age})
+    </insert>
+
+    <select id="findCustomer" resultMap="BaseResultMapper">
+        select * from user_info where phone = #{phone}
+    </select>
+
+    <!-- Read -->
+    <select id="queryUserInfo" resultType="com.ghost.springcloud.entity.User">
+        select * from user_info where id=#{id}
+    </select>
+
+</mapper>
