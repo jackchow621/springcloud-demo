@@ -1,0 +1,11 @@
+org.springframework.context.ApplicationListener=\
+com.jdh.boot.filter.LogAppenderListener,\
+com.jdh.boot.filter.NacosListener,\
+com.jdh.boot.autoconfigure.GitCommitInfoPrintAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.jdh.boot.autoconfigure.CommonAutoConfiguration,\
+com.jdh.boot.autoconfigure.FeignAutoConfiguration,\
+com.jdh.boot.autoconfigure.NacosAutoConfiguration,\
+com.jdh.boot.autoconfigure.RouteAutoConfiguration,\
+com.jdh.boot.autoconfigure.LocalCacheAutoConfigure,\
+com.jdh.boot.autoconfigure.AppPackageInfoAutoConfigure

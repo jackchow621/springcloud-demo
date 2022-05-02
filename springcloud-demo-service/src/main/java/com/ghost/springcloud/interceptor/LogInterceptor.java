@@ -1,7 +1,7 @@
 package com.ghost.springcloud.interceptor;
 
+import com.ghost.demo.util.UnsafetyIdUtil;
 import com.ghost.springcloud.constant.Constants;
-import com.ghost.springcloud.util.UnsafetyIdUtil;
 import org.slf4j.MDC;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

@@ -1,4 +1,4 @@
-package com.ghost.springcloud.util;
+package com.ghost.demo.util;
 
 import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.util.IdUtil;

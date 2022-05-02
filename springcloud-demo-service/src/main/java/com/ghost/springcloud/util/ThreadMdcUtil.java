@@ -1,5 +1,6 @@
 package com.ghost.springcloud.util;
 
+import com.ghost.demo.util.UnsafetyIdUtil;
 import com.ghost.springcloud.constant.Constants;
 import org.slf4j.MDC;
 

@@ -24,6 +24,7 @@
     <modules>
         <module>springcloud-demo-data</module>
         <module>springcloud-demo-service</module>
+        <module>springcloud-demo-starter-web</module>
     </modules>
 
     <dependencyManagement>
